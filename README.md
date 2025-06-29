@@ -26,18 +26,6 @@ Each project demonstrates:
 
 ---
 
-### 🎥 Sample Videos
-
-| Project | Type | Link |
-|--------|------|------|
-| Doha Skyview | Apartment Showcase | [Watch on Google Drive](#) |
-| The Pearl Villa | Luxury Home Tour | [Watch on Google Drive](#) |
-| Agent Intro + Brand Package | Personal Branding | [Watch on Google Drive](#) |
-
-> 📌 *Full video library available on request. Not all client work can be made public due to NDAs.*
-
----
-
 ### 📈 Why This Matters
 
 In today’s market, real estate media isn’t just about visuals — it’s a **sales tool**.  
