@@ -51,9 +51,7 @@ h1, h2, h3 {
 
 
 h1.hero-title {
-  font-size: 3.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-size: 10rem;
 }
 
 .tagline {
@@ -188,6 +186,40 @@ nav a:hover {
 .usp-list li {
   margin-bottom: 0.9rem;
 }
+
+.video-section {
+  padding: 60px 20px;
+  background-color: #0b0b0b; /* deep black */
+  color: #fff;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: gold;
+}
+
+.video-container {
+  position: relative;
+  width: 90%;            /* Wider video */
+  max-width: 1000px;     /* Limit max width */
+  height: 500px;         /* Control height */
+  margin: 40px auto;     /* Centered with spacing */
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3); /* golden glow */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* ===== Testimonial Block ===== */
 .testimonial-block {
