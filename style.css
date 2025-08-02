@@ -245,6 +245,18 @@ nav a:hover {
 }
 
 .skills-highlight h3 {
+  font-size: 28px; /* Increase or decrease as needed */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.skills-highlight ul {
+  font-size: 20px; /* This controls the size of the bullet points */
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.skills-highlight h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
   color: #d4af37;
