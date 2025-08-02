@@ -218,6 +218,13 @@ nav a:hover {
   line-height: 1.6;
   margin-bottom: 40px;
 }
+.section-description {
+  font-size: 20px;      /* Try 22px or 24px for more impact */
+  line-height: 1.8;
+  max-width: 800px;     /* Optional: keeps it readable on big screens */
+  margin: 0 auto 40px;  /* Optional: centers the text and adds bottom spacing */
+  text-align: center;   /* Optional: centers the text */
+}
 
 .video-wrapper {
   position: relative;
