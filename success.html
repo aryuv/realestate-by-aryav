@@ -3,75 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Message Sent | Valaré</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <title>Message Received — Valaré</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
+      background: #060605;
+      color: #b8b09e;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
       text-align: center;
-      padding: 80px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 560px;
+      animation: appear 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .rule {
+      width: 40px;
+      height: 1px;
+      background: #b8945a;
+      margin: 0 auto 36px;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #ede8de;
+      letter-spacing: 0.08em;
+      margin-bottom: 48px;
+      display: block;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: gold;
-      margin-bottom: 20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-weight: 300;
+      color: #ede8de;
+      line-height: 1.15;
+      margin-bottom: 28px;
+      letter-spacing: 0.01em;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #ddd;
-      margin-bottom: 40px;
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #b8b09e;
+      margin-bottom: 48px;
     }
 
-    .button {
+    p em {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: #b8945a;
+      font-size: 1.05em;
+    }
+
+    .btn {
       display: inline-block;
-      background: gold;
-      color: black;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
       text-decoration: none;
-      padding: 14px 30px;
-      font-weight: 600;
-      font-size: 1rem;
-      border-radius: 8px;
-      transition: 0.3s;
+      color: #060605;
+      background: #b8945a;
+      padding: 16px 44px;
+      transition: background 0.3s ease, letter-spacing 0.3s ease;
+    }
+    .btn:hover {
+      background: #d4ad72;
+      letter-spacing: 0.27em;
     }
 
-    .button:hover {
-      background: #e6c200;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 20px;
+    footer {
+      position: fixed;
+      bottom: 24px;
       left: 0;
       right: 0;
       text-align: center;
-      font-size: 0.9rem;
-      color: #666;
+      font-size: 0.66rem;
+      letter-spacing: 0.1em;
+      color: #3e3c38;
+      text-transform: uppercase;
     }
   </style>
 </head>
 <body>
-<h1>Your Message Has Been Delivered</h1>
-<p>
-  Every great journey begins with a single gesture.<br>
-  You've just taken the first step toward redefining your property's legacy.<br><br>
-  <strong>Valaré</strong> will be in touch soon — excellence is already en route.
-</p>
-
-  <a class="button" href="index.html">Return to Homepage</a>
-
-  <div class="footer">
-    &copy; 2025 Valaré — All Rights Reserved
+  <div class="wrap">
+    <span class="logo">Valaré</span>
+    <div class="rule"></div>
+    <h1>Your Message<br>Has Been Received</h1>
+    <p>
+      Every great project begins with a single conversation.<br>
+      We'll be in touch shortly — <em>excellence is already en route.</em>
+    </p>
+    <a class="btn" href="index.html">Return to Homepage</a>
   </div>
+  <footer>&copy; 2025 Valaré — All Rights Reserved</footer>
 </body>
 </html>
