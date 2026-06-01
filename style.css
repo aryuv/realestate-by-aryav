@@ -1,5 +1,5 @@
 /* ===== Fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Jost:wght@300;400;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   background-color: #fff;
   color: #222;
   line-height: 1.6;
@@ -17,7 +17,7 @@ html, body {
 
 /* Scroll Progress Bar */
 #scroll-progress {
-  height: 4px !important; /* thicker for luxury feel */
+  height: 4px !important;
   background: linear-gradient(90deg, #f5d100, #d4af37, #ffd700);
   box-shadow: 0 0 8px #f5d100;
   z-index: 9999;
@@ -37,7 +37,7 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   background-color: #0a0a0a;
   color: #ddd;
   line-height: 1.6;
@@ -62,12 +62,12 @@ h1.hero-title {
 }
 
 strong {
-  font-weight: 800;
-  color: #ffd700; /* Gold color */
+  font-weight: 700;
+  color: #d4af37;
   font-size: 0.9em;
   letter-spacing: 0.5px;
-  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3); /* subtle glow */
 }
+
 h2 {
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
@@ -82,7 +82,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #d4af37; /* luxury gold */
+  color: #d4af37;
   transition: color 0.3s ease;
 }
 
@@ -122,6 +122,7 @@ nav a:hover {
   position: relative;
   height: 100vh;
   background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -188,10 +189,6 @@ nav a:hover {
 }
 
 
-
-
-
-
 .brand-intro-section {
   padding: 80px 20px;
   background-color: #0d0d0d;
@@ -209,26 +206,20 @@ nav a:hover {
   font-size: 2.8rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #f0d88b; /* Gold-ish tone */
+  color: #f0d88b;
 }
 
 .section-description {
-  font-size: 1.1rem;
-  color: #ccc;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-.section-description {
-  font-size: 20px;      /* Try 22px or 24px for more impact */
+  font-size: 20px;
   line-height: 1.8;
-  max-width: 800px;     /* Optional: keeps it readable on big screens */
-  margin: 0 auto 40px;  /* Optional: centers the text and adds bottom spacing */
-  text-align: center;   /* Optional: centers the text */
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
 }
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -252,18 +243,6 @@ nav a:hover {
 }
 
 .skills-highlight h3 {
-  font-size: 28px; /* Increase or decrease as needed */
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.skills-highlight ul {
-  font-size: 20px; /* This controls the size of the bullet points */
-  line-height: 1.8;
-  padding-left: 20px;
-}
-
-.skills-highlight h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
   color: #d4af37;
@@ -273,6 +252,8 @@ nav a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 20px;
+  line-height: 1.8;
 }
 
 .skills-highlight ul li {
@@ -289,13 +270,9 @@ nav a:hover {
 }
 
 
-
-
-
-
 .video-section {
   padding: 60px 20px;
-  background-color: #0b0b0b; /* deep black */
+  background-color: #0b0b0b;
   color: #fff;
   text-align: center;
 }
@@ -306,23 +283,22 @@ nav a:hover {
   padding: 0 1rem;
 }
 
-
 .video-section h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   font-weight: 700;
-  color: gold;
+  color: #d4af37;
 }
 
 .video-container {
   position: relative;
-  width: 90%;            /* Wider video */
-  max-width: 1000px;     /* Limit max width */
-  height: 500px;         /* Control height */
-  margin: 40px auto;     /* Centered with spacing */
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 40px auto;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3); /* golden glow */
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
 }
 
 .video-container iframe {
@@ -358,7 +334,6 @@ nav a:hover {
   border-left: 5px solid #d4af37;
   background-color: #1e1e1e;
   border-radius: 8px;
-  box-shadow: inset 0 0 8px #d4af37;
 }
 
 .testimonial strong {
@@ -370,11 +345,11 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* ==== About me section (dark theme) ==== */
+/* ==== About section (dark theme) ==== */
 #about {
   background-color: #0e0e0e;
   padding: 4rem 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   color: #ddd;
   max-width: 900px;
   margin: 0 auto;
@@ -490,6 +465,7 @@ textarea {
   background-color: #222;
   color: #eee;
   font-size: 1.1rem;
+  font-family: 'Jost', sans-serif;
   resize: vertical;
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
   transition: box-shadow 0.3s ease;
@@ -512,7 +488,8 @@ button[type="submit"] {
   color: #0a0a0a;
   padding: 1rem 2rem;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: 'Jost', sans-serif;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -577,24 +554,3 @@ footer p {
     padding: 1.5rem 1rem;
   }
 }
-
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('logo-watermark.png') no-repeat center center;
-  background-size: 40%;
-  opacity: 0.20; /* adjust opacity here */
-  z-index: 0;
-  pointer-events: none;
-}
-
-* {
-  position: relative;
-  z-index: 1;
-}
-
