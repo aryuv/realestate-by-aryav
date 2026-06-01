@@ -3,208 +3,267 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryav Solanki | Luxury Real Estate Video Editor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Valaré — Luxury Real Estate Content</title>
+  <meta name="description" content="Valaré crafts cinematic video content for luxury real estate professionals. Elevate your listings. Define your brand." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
- <div id="scroll-progress" class="fixed top-0 left-0 h-1 z-50 transition-all duration-200 shadow-md" style="width: 0%; background: linear-gradient(90deg, #f5d100, #d4af37, #ffd700); box-shadow: 0 0 8px #f5d100;"></div>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#usp">USP</a>
-    <a href="#about">About Me</a>
-    <a href="#faq">FAQs</a>
-    <a href="#contact">Contact</a>
-
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Valaré</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
   </nav>
 
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1 class="hero-title reveal">Valaré</h1>
-      <p class="tagline reveal">By Aryav Solanki — The Essence of Luxury, The Heart of Emotion</p>
-      <a href="#contact" class="hero-btn">Work With Me</a>
-    </div>
-  </section>
-
-  <div class="branding-tag">Est. 2024 — Excellence in Every Frame</div>
-
-  <section class="section" id="services">
-    <h2>What I Offer</h2>
-    <ul class="usp-list">
-      <li>Luxury-grade cinematic video editing</li>
-      <li>Professional color grading and transitions</li>
-      <li>Motion graphics and logo animations</li>
-      <li>Custom music selection tailored to your brand and audience</li>
-      <li>Social media-ready reels and stories</li>
-      <li>Drone footage integration</li>
-      <li>Ultra Fast delivery timelines</li>
-    </ul>
-  </section>
-
-<section id="usp" class="section reveal">
-  <h2>Why High-End Realtors Choose Me</h2>
-  <ul class="usp-list">
-    <li><strong>Not Just Edits — Experiences:</strong> I don’t “edit videos.” I create cinematic journeys that make viewers feel desire, urgency, and aspiration — all in under 90 seconds.</li>
-    
-    <li><strong>Tailored to the Luxury Market:</strong> Every transition, color tone, and music cue is designed for one goal: to elevate the property into an emotional investment. This isn’t generic editing — this is brand-first storytelling.</li>
-    
-    <li><strong>Speed with Perfection:</strong> 48-hour delivery without shortcuts. Because in real estate, time kills deals and my edits help you close faster.</li>
-    
-    <li><strong>Mastery of Social Conversions:</strong> I craft short-form content that commands attention; optimized for Instagram, TikTok, and YouTube Shorts to drive inquiries and viewings.</li>
-    
-    <li><strong>Vision-First Approach:</strong> I align with your brand vision and values before a single frame is cut. That’s how my edits don’t just look good — they feel right to your market.</li>
-  </ul>
-</section>
-
-<section class="video-section brand-intro-section">
-  <div class="container">
-    <h2>Brand Identity Showcase</h2>
-<p class="section-description">
-  Luxury isn’t a lifestyle. It’s a mindset.  
-  <br><br>
-  This cinematic agent intro tells a story — a journey from vision to legacy. It captures not just who the agent is, but what he stands for: precision, purpose, and presence.  
-  <br><br>
-  Every second of this video was crafted to reflect that essence — from the powerful logo animation to the carefully written narration, from the smooth transitions to the emotionally aligned soundtrack.  
-  <br><br>
-  This isn’t just editing. It’s full-spectrum <strong>brand storytelling</strong>.  
-  <br><br>
-  <em>Direction. Design. Delivery.</em> All by me.
-</p>
-
-    
-    <div class="video-wrapper">
-      <iframe 
-        src="https://www.youtube.com/embed/cja-gt67gfs" 
-        title="Branded Agent Intro + Logo Animation + CTA"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-    
-    <div class="skills-highlight">
-      <h2>What This Video Showcases:</h2>
-      <ul>
-        <li> High-end logo animation</li>
-        <li> Strategic brand positioning</li>
-        <li> Smooth cinematic transitions</li>
-        <li> Luxury real estate tone & identity</li>
-        <li> Premium story telling</li>
-      </ul>
-    </div>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#approach" class="mobile-link">Approach</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Get in Touch</a>
   </div>
-</section>
 
-<section class="video-section">
-  <div class="container">
-    <h2>Featured Property Walkthrough</h2>
-    
-    <p class="video-description">
-      Welcome to a cinematic journey through a <strong>€10 Million Mansion</strong> nestled in the heart of <strong>Sotogrande Golf Estate</strong>; a sanctuary of elegance, prestige, and refined architecture.
-      <br><br>
-      This sample showcases our mastery in <em>luxury property storytelling</em> — from buttery-smooth transitions and ambient scoring, to drone flow, spatial pacing, and color grading that evokes warmth and wealth.
-      <br><br>
-      We don’t just film spaces — <strong>we craft emotional narratives</strong> that sell experiences before they sell properties.
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Est. 2024 &nbsp;·&nbsp; Luxury Real Estate Content</span>
+      <h1 class="hero-title">Valaré</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-tagline">The Essence of Luxury. The Heart of Emotion.</p>
+      <a href="#contact" class="hero-cta">Begin a Project</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy-wrap">
+    <p class="philosophy-text fade-up">
+      A property is not four walls and a roof.<br>
+      It is an invitation to a way of life.<br>
+      <em>We make that invitation irresistible.</em>
     </p>
+  </section>
 
-<div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/0MTzeNZsCwo"
-    title="Sotogrande Mansion Walkthrough"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+  <!-- WORK / PORTFOLIO -->
+  <section class="section work-section" id="work">
+    <div class="section-label fade-up">The Work</div>
 
+    <div class="work-item fade-up">
+      <div class="work-meta">
+        <span class="work-number">01</span>
+        <div class="work-info">
+          <h3 class="work-title">Brand Identity Showcase</h3>
+          <p class="work-desc">A cinematic agent introduction — from vision to legacy. Every frame, note, and word crafted to establish authority, trust, and presence in under ninety seconds.</p>
+          <div class="work-tags">
+            <span>Personal Branding</span>
+            <span>Logo Animation</span>
+            <span>Storytelling</span>
+          </div>
+        </div>
+      </div>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/cja-gt67gfs"
+          title="Brand Identity Showcase"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="work-divider"></div>
+
+    <div class="work-item fade-up">
+      <div class="work-meta">
+        <span class="work-number">02</span>
+        <div class="work-info">
+          <h3 class="work-title">€10M Mansion — Sotogrande Estate</h3>
+          <p class="work-desc">A sanctuary of elegance in the Sotogrande Golf Estate. Drone choreography, warm color grading, and deliberate spatial pacing combine to sell not a property — but a lifestyle.</p>
+          <div class="work-tags">
+            <span>Property Walkthrough</span>
+            <span>Drone Integration</span>
+            <span>Color Grading</span>
+          </div>
+        </div>
+      </div>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/0MTzeNZsCwo"
+          title="Sotogrande Mansion Walkthrough"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- APPROACH -->
+  <div class="approach-bg" id="approach">
+    <div class="approach-inner">
+      <div class="section-label fade-up">The Approach</div>
+      <h2 class="section-title fade-up">Crafted for Those Who<br><em>Refuse to Be Ordinary</em></h2>
+      <div class="pillars">
+        <div class="pillar fade-up">
+          <span class="pillar-number">I</span>
+          <h4>Perception Shapes Value</h4>
+          <p>The same property can feel average or extraordinary depending entirely on how it is presented. We engineer perception — turning listings into aspirational objects of desire.</p>
+        </div>
+        <div class="pillar fade-up">
+          <span class="pillar-number">II</span>
+          <h4>Cinematic Storytelling</h4>
+          <p>Every edit is built around a narrative arc. Music, pacing, color, and motion work together to create an emotional experience — not a slideshow of rooms.</p>
+        </div>
+        <div class="pillar fade-up">
+          <span class="pillar-number">III</span>
+          <h4>Brand Elevation</h4>
+          <p>Your video content is your reputation. Premium presentation signals premium service — attracting buyers and sellers who expect nothing less than the best.</p>
+        </div>
+        <div class="pillar fade-up">
+          <span class="pillar-number">IV</span>
+          <h4>Precision and Speed</h4>
+          <p>Delivered in 2–4 days without compromise. In luxury real estate, timing is everything — and your content should never be the bottleneck to a closed deal.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
 
-  <section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p><strong>Every luxury property has a story and I bring that story to life on screen.</strong> I’m a real estate video editor who specializes in creating cinematic experiences that not only showcase properties but make people feel something: desire, elegance, aspiration.</p>
-  <p>My journey started years ago — not with expensive gear or big clients, but with a fascination for storytelling and visuals. I spent countless hours studying how luxury brands sell emotions, not just products. That obsession turned into a craft, and that craft is now my full-time focus.</p>
-  <p>Unlike most editors, I don’t just “cut clips.” I understand how to build mood, rhythm, and visual flow that elevates listings into marketing assets. My work is guided by <strong>psychology, precision, and high-end taste</strong> — tailored for clients who demand more than average.</p>
-  <p>I work with real estate professionals across the world - from the Gulf to Europe to the Americas — who want to stand out in an overcrowded market. If you value presentation, storytelling, and premium aesthetics, we’re already on the same page.</p>
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="section-label fade-up">About</div>
+    <div class="about-content fade-up">
+      <p>Valaré was founded on a simple conviction: that the finest properties deserve content that matches their standard.</p>
+      <p>My craft is guided by a deep study of how luxury brands communicate — not through specification and features, but through emotion, aspiration, and identity. Every frame is considered. Every cut is intentional. Every second earns its place.</p>
+      <p>If you hold your brand to a high standard, we are already aligned.</p>
+      <span class="about-signature">— Aryav Solanki, Founder</span>
+    </div>
   </section>
 
-  <p class="signature">— Aryav Solanki</p>
-
-
-  <section class="section" id="faq">
-    <h2>FAQs — Frequently Ask Questions</h2>
-    <details>
-      <summary>How long does a typical project take?</summary>
-      Usually 2–4 days depending on complexity and revisions.
-    </details>
-    <details>
-      <summary>Can you help me select music and footage?</summary>
-      Yes, I assist in both music selection and footage curation.
-    </details>
-    <details>
-      <summary>Do you offer vertical videos for Instagram?</summary>
-      Absolutely — reels and TikTok formats are fully supported.
-    </details>
-    <details>
-      <summary>What’s your pricing structure?</summary>
-      I offer flexible packages based on your needs, all luxurious though. Contact me for a quote.
-    </details>
-    <details>
-      <summary>Can I request revisions?</summary>
-      Free 3-4 revisions, after that each revision will be charged based on the work it requires.
-    </details>
-    <details>
-      <summary>Do you add subtitles or motion graphics?</summary>
-      Yes, I can include animated text, callouts, and branded graphics.
-    </details>
-    <details>
-      <summary>Is drone footage editing included?</summary>
-      Yes — I edit and integrate drone footage seamlessly.
-    </details>
-    <details>
-      <summary>Can you handle urgent same-day delivery?</summary>
-      Yes, I offer express delivery options for urgent requests.
-    </details>
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="section-label fade-up">Questions</div>
+    <div class="faq-list fade-up">
+      <details class="faq-item">
+        <summary>How long does a project take?</summary>
+        <p>Typically 2–4 days, depending on length and complexity. Rush delivery is available for time-sensitive listings.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What formats do you deliver in?</summary>
+        <p>All standard formats — 16:9 for YouTube and property portals, vertical 9:16 for Instagram Reels and TikTok, and square 1:1 when needed.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can you help with music selection?</summary>
+        <p>Yes. Music selection is central to the process. I source tracks that align with the property's character and the mood your brand commands.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many revisions are included?</summary>
+        <p>Three rounds of revisions are included with every project. Additional changes beyond that are scoped and quoted individually.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is your pricing?</summary>
+        <p>Pricing is tailored to each project's scope and requirements. Contact us to discuss your vision and receive a custom quote.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with drone footage?</summary>
+        <p>Yes — drone footage is integrated seamlessly and is often central to the narrative, particularly for estate and development projects.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you add motion graphics or text overlays?</summary>
+        <p>Yes. Animated callouts, branded lower thirds, and logo animations are all available and tailored to your visual identity.</p>
+      </details>
+    </div>
   </section>
 
-<section class="section contact-form" id="contact">
-  <h2>Let’s Elevate Your Property</h2>
-  <form action="https://formsubmit.co/a976beeb29048161a44800c1b72c943f" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="box">
-    <input type="hidden" name="_next" value="https://realestate-by-aryav.netlify.app/success.html">
-    
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <!-- CONTACT -->
+  <div class="contact-bg" id="contact">
+    <div class="contact-inner">
+      <div class="section-label fade-up">Contact</div>
+      <h2 class="section-title fade-up">Let's Begin</h2>
+      <p class="contact-intro fade-up">Tell us about your property or brand. We'll take it from there.</p>
+      <form
+        class="contact-form fade-up"
+        action="https://formsubmit.co/a976beeb29048161a44800c1b72c943f"
+        method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="https://realestate-by-aryav.netlify.app/success.html">
+        <div class="form-row">
+          <input type="text"  name="name"    placeholder="Your Name"      required />
+          <input type="email" name="email"   placeholder="Email Address"  required />
+        </div>
+        <textarea name="message" placeholder="Tell us about your project" rows="5"></textarea>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
 
-
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Aryav Solanki | All rights reserved.</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/valare.studio/" target="_blank">Instagram</a>
-      <a href="mailto:aryav.solanki09@gmail.com">Email</a>
-      <a href="https://wa.me/97470150649" target="_blank">WhatsApp</a>
+    <div class="footer-inner">
+      <span class="footer-logo">Valaré</span>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/valare.studio/" target="_blank">Instagram</a>
+        <a href="mailto:aryav.solanki09@gmail.com">Email</a>
+        <a href="https://wa.me/97470150649" target="_blank">WhatsApp</a>
+      </div>
+      <span class="footer-copy">&copy; 2025 Valaré. All rights reserved.</span>
     </div>
   </footer>
 
   <script>
-    ScrollReveal().reveal('.reveal', { distance: '40px', duration: 1000, easing: 'ease-out', origin: 'bottom', interval: 200 });
+    // Scroll-triggered fade-up animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger siblings by their index among .fade-up children
+          const siblings = entry.target.parentElement.querySelectorAll('.fade-up');
+          let delay = 0;
+          siblings.forEach((el, idx) => { if (el === entry.target) delay = idx * 80; });
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Nav background on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Mobile menu toggle
+    const hamburger = document.getElementById('navHamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active', open);
+    });
+    mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
   </script>
-<script>
-  window.addEventListener('scroll', () => {
-    const scrollProgress = document.getElementById('scroll-progress');
-    const totalHeight = document.body.scrollHeight - window.innerHeight;
-    const progress = (window.scrollY / totalHeight) * 100;
-    scrollProgress.style.width = progress + '%';
-  });
-</script>
 
 </body>
 </html>
